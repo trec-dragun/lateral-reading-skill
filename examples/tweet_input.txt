@@ -1,0 +1,6 @@
+Screenshot text:
+
+"BREAKING: The regulator just banned this medication nationwide."
+
+Notes for use: ask the skill to locate the original regulator action, determine whether it is a ban, recall, warning, label update, proposal, or investigation, and cite the primary notice.
+

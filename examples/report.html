@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>City announces new recycling pilot</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f7f4;
+      --panel: #ffffff;
+      --text: #1f2328;
+      --muted: #6a7178;
+      --border: #d8d8d0;
+      --accent: #0f6b5f;
+      --warn: #9a4f00;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    header {
+      padding: 28px min(5vw, 56px) 18px;
+      border-bottom: 1px solid var(--border);
+      background: var(--panel);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(24px, 3vw, 38px);
+      letter-spacing: 0;
+    }
+    .subtle, .muted {
+      color: var(--muted);
+    }
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(360px, 0.95fr);
+      gap: 24px;
+      padding: 24px min(5vw, 56px) 40px;
+    }
+    section {
+      min-width: 0;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+    pre {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      margin: 0;
+      font: inherit;
+    }
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 16px;
+    }
+    .badge {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 4px 10px;
+      background: #fbfbf9;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .badge.warn {
+      color: var(--warn);
+      border-color: #e0b37b;
+      background: #fff7ed;
+    }
+    .sentence {
+      display: grid;
+      grid-template-columns: 32px minmax(0, 1fr);
+      gap: 12px;
+      padding: 14px 0;
+      border-top: 1px solid var(--border);
+    }
+    .sentence:first-of-type {
+      border-top: 0;
+    }
+    .sentence-index {
+      grid-column: 1;
+      grid-row: 1;
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .sentence p {
+      grid-column: 2;
+      margin: 0 0 8px;
+    }
+    .citations {
+      grid-column: 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .citations a {
+      display: inline-flex;
+      max-width: 100%;
+      padding: 3px 8px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fbfbf9;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+    .citations a:hover {
+      text-decoration: underline;
+    }
+    a {
+      color: var(--accent);
+      overflow-wrap: anywhere;
+    }
+    @media (max-width: 860px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>City announces new recycling pilot</h1>
+    <div class="subtle">Generated 2026-05-21 02:50 UTC</div>
+  </header>
+  <main>
+    <section class="panel">
+      <h2>Target</h2>
+      <div class="subtle"><span>Example Daily</span></div>
+      <pre>Title: City announces new recycling pilot
+Source: Example Daily
+Date: 2026-05-20
+
+The city announced a new recycling pilot and said the program is expected to reduce landfill waste by 20 percent next year. The article says the estimate comes from an internal city analysis but does not link to the analysis, define the baseline, or explain whether the number applies citywide or only to participating neighborhoods.
+
+</pre>
+    </section>
+    <section class="panel">
+      <h2>Report</h2>
+      <div class="stats">
+        <span class="badge">3 sentences</span>
+        <span class="badge">66 words</span>
+        <span class="badge">2 citations</span>
+        <span class="badge warn">1 uncited</span>
+      </div>
+      
+            <article class="sentence">
+              <div class="sentence-index">1</div>
+              <p>The article&#x27;s central claim is that a new recycling pilot is expected to reduce landfill waste by 20 percent next year.</p>
+              <div class="citations"><a href="https://example.com/target-article" rel="noreferrer" target="_blank">example.com</a></div>
+            </article>
+            
+            <article class="sentence">
+              <div class="sentence-index">2</div>
+              <p>That forecast should be treated cautiously unless the city publishes the model, baseline waste volume, implementation timeline, and whether the estimate applies citywide or only to participating neighborhoods.</p>
+              <div class="citations"><a href="https://example.com/city-plan" rel="noreferrer" target="_blank">example.com</a></div>
+            </article>
+            
+            <article class="sentence">
+              <div class="sentence-index">3</div>
+              <p>Bottom line: the announcement may be real, but the reported effect size is not yet independently demonstrated.</p>
+              <div class="citations"><span class="muted">No citation</span></div>
+            </article>
+            
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,7 @@
+[project]
+name = "lateral-reading-skill"
+version = "0.1.0"
+description = "Claude Code plugin and portable skill for cited lateral-reading trust reports."
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+

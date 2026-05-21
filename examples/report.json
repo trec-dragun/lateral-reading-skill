@@ -1,0 +1,17 @@
+{
+  "responses": [
+    {
+      "text": "The article's central claim is that a new recycling pilot is expected to reduce landfill waste by 20 percent next year.",
+      "citations": ["https://example.com/target-article"]
+    },
+    {
+      "text": "That forecast should be treated cautiously unless the city publishes the model, baseline waste volume, implementation timeline, and whether the estimate applies citywide or only to participating neighborhoods.",
+      "citations": ["https://example.com/city-plan"]
+    },
+    {
+      "text": "Bottom line: the announcement may be real, but the reported effect size is not yet independently demonstrated.",
+      "citations": []
+    }
+  ]
+}
+

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lateral Reading"
+  short_description: "Assess claims with cited lateral reading"
+  default_prompt: "Use $lateral-reading to assess this article or claim, write target.txt and report.json, then render report.html."

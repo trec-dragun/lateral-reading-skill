@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "lateral-reading-skill",
+  "displayName": "Lateral Reading",
+  "description": "Assess articles, posts, claims, and screenshots with lateral reading and sentence-level URL citations.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Dake Zhang"
+  },
+  "license": "Apache-2.0"
+}
+
