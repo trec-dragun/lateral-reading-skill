@@ -1,6 +1,6 @@
 # lateral-reading-skill
 
-Claude Code plugin and portable skill for assessing articles, posts, claims, URLs, and screenshot text with lateral reading. The skill extracts the target into a text file, writes a structured sentence-level report, and renders an HTML visualization.
+Codex and Claude Code plugin for assessing articles, posts, claims, URLs, and screenshot text with lateral reading. The skill extracts the target into a text file, writes a structured sentence-level report, and renders an HTML visualization.
 
 ```json
 {
@@ -15,7 +15,7 @@ Claude Code plugin and portable skill for assessing articles, posts, claims, URL
 
 The repo intentionally stays focused on everyday use.
 
-## Use
+## Use With Claude Code
 
 Load the local plugin in Claude Code:
 
@@ -30,6 +30,16 @@ Then invoke:
 ```
 
 Paste an article, URL, claim, tweet, or screenshot. The skill will first write the normalized target content into `target.txt`, then identify the central claim, read laterally against primary and independent sources, write `report.json`, and render `report.html`.
+
+## Use With Codex
+
+Use this repository as a local Codex plugin. Codex reads:
+
+- `.codex-plugin/plugin.json` for the plugin manifest.
+- `skills/lateral-reading/SKILL.md` for the skill instructions.
+- `skills/lateral-reading/agents/openai.yaml` for skill UI settings.
+
+Invoke `$lateral-reading` with an article, URL, claim, tweet, or screenshot. The expected workflow and output artifacts are the same as the Claude Code plugin path.
 
 By default, a run should produce:
 
@@ -75,6 +85,7 @@ Both scripts use only the Python standard library.
 ## Files
 
 - `.claude-plugin/plugin.json`: Claude Code plugin manifest.
+- `.codex-plugin/plugin.json`: Codex plugin manifest.
 - `skills/lateral-reading/SKILL.md`: model instructions.
 - `skills/lateral-reading/references/`: detailed guidance loaded as needed.
 - `schemas/`: JSON Schema for the simple responses-only report shape.

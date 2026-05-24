@@ -1,0 +1,32 @@
+{
+  "name": "lateral-reading-skill",
+  "version": "0.1.0",
+  "description": "Assess articles, posts, claims, and screenshots with lateral reading and sentence-level URL citations.",
+  "author": {
+    "name": "Dake Zhang"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "lateral-reading",
+    "fact-checking",
+    "news",
+    "citations"
+  ],
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Lateral Reading",
+    "shortDescription": "Assess claims with cited lateral reading",
+    "longDescription": "Extract an article, post, claim, URL, or screenshot into a target text file, assess it with lateral reading, produce sentence-level cited JSON, and render an HTML report.",
+    "developerName": "Dake Zhang",
+    "category": "Research",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Web"
+    ],
+    "defaultPrompt": [
+      "Use $lateral-reading to assess this article or claim."
+    ],
+    "brandColor": "#0F6B5F"
+  }
+}
